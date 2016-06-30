@@ -93,7 +93,7 @@ namespace Assignment_3
             }
         }
 
-        public int Property6
+        public int RingCount
         {
             get
             {
