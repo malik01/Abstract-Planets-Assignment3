@@ -8,5 +8,21 @@ namespace Assignment_3
 {
     class TerrestrialPlanet : Planet
     {
+        private int _oxygen;
+
+        public TerrestrialPlanet()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Habitable()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void HasMoons()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
