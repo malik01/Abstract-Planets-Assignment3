@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment_3
 {
-    class TerrestrialPlanet
+    class TerrestrialPlanet : Planet
     {
     }
 }
