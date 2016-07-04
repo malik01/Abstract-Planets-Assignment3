@@ -10,10 +10,10 @@ namespace Assignment_3
     {
         private int _oxygen;
 
-        public TerrestrialPlanet()
+        public TerrestrialPlanet(string name, double diameter, double mass) : base(name, diameter, mass)
         {
-            throw new System.NotImplementedException();
         }
+
 
         public void Habitable()
         {

@@ -8,16 +8,16 @@ namespace Assignment_3
 {
      class  GiantPlanet : Planet
     {
-        private int _type;
+        private string _type;
 
-        public GiantPlanet()
+        public GiantPlanet(string type,string name, double diameter, double mass) : base(name, diameter, mass)
         {
-            throw new System.NotImplementedException();
+            this._type = type;
         }
 
         public void Hasmoons()
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void HasRings()
