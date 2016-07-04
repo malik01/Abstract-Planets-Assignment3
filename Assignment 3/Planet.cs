@@ -10,38 +10,32 @@ namespace Assignment_3
     {
         private double _diameter;
         private double _mass;
-        private double _moonCount;
-        private double _name;
+        private int _moonCount;
+        private string _name;
         private double _orbitalPeriod;
-        private double _ringCount;
+        private int _ringCount;
         private double _rotationPeriod;
 
-        public Planet()
+        public Planet(string name, double diameter, double mass)
         {
-            throw new System.NotImplementedException();
+            this._name = name;
+            this._diameter = diameter;
+            this._mass = mass;
         }
 
-        public int Diameter
+        public double Diameter
         {
             get
             {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
+                return this._diameter;
             }
         }
 
-        public int Mass
+        public double Mass
         {
             get
             {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
+                return this._mass;
             }
         }
 
@@ -49,47 +43,46 @@ namespace Assignment_3
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _moonCount;
             }
 
             set
             {
+                this._moonCount = value;
             }
         }
 
-        public int Name
+        public string Name
         {
             get
             {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
+                return _name;
             }
         }
 
-        public int OrbitalPeriod
+        public double OrbitalPeriod
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._orbitalPeriod;
             }
 
             set
             {
+                this._orbitalPeriod = value;
             }
         }
 
-        public int RotationalPeriod
+        public double RotationalPeriod
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._rotationPeriod;
             }
 
             set
             {
+                this._rotationPeriod = value;
             }
         }
 
@@ -97,11 +90,12 @@ namespace Assignment_3
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._ringCount;
             }
 
             set
             {
+                this._ringCount = value;
             }
         }
 
