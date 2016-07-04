@@ -99,9 +99,11 @@ namespace Assignment_3
             }
         }
 
-        public void ToString()
+        public override string ToString()
         {
-            throw new System.NotImplementedException();
+            string total = Name + Diameter + Mass;
+            Console.WriteLine("planet {0} has a diameter of {1} and a mass of {2}", Name, Diameter, Mass);
+            return total;
         }
     }
 }

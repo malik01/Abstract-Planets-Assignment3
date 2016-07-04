@@ -10,6 +10,8 @@ namespace Assignment_3
     {
         static void Main(string[] args)
         {
+            GiantPlanet planet1 = new GiantPlanet("gas", "jupiter", 2016.25, 49954548.1150);
+            planet1.ToString();
         }
     }
 }

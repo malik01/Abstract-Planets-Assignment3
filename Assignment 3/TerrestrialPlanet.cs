@@ -6,23 +6,40 @@ using System.Threading.Tasks;
 
 namespace Assignment_3
 {
-    class TerrestrialPlanet : Planet
+    interface IHabitable
     {
-        private int _oxygen;
+        bool Habitable();
+    }
+    class TerrestrialPlanet : Planet , IHasMoons , IHabitable
+    {
+        private bool _oxygen;
 
-        public TerrestrialPlanet(string name, double diameter, double mass) : base(name, diameter, mass)
+        public TerrestrialPlanet(bool oxygen,string name, double diameter, double mass) : base(name, diameter, mass)
         {
+            this._oxygen = oxygen;
         }
 
 
-        public void Habitable()
+        public bool Habitable()
         {
-            throw new System.NotImplementedException();
+            if (_oxygen == true)
+            { return true; }
+            else
+            {
+                return false;
+            }
         }
 
-        public void HasMoons()
+        public bool HasMoons()
         {
-            throw new System.NotImplementedException();
+            if (MoonCount > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Assignment_3
 {
-     class  GiantPlanet : Planet
+    interface IHasMoons
+    {
+        bool HasMoons();
+    }
+    interface IHasRings
+    {
+        bool HasRings();
+    }
+    class  GiantPlanet : Planet , IHasMoons , IHasRings
     {
         private string _type;
 
@@ -14,15 +22,29 @@ namespace Assignment_3
         {
             this._type = type;
         }
-
-        public void Hasmoons()
+        
+        public bool HasMoons()
         {
-            
+         if (MoonCount > 0)
+            {
+                return true;
+            } 
+         else
+            {
+                return false;
+            }  
         }
 
-        public void HasRings()
+        public bool HasRings()
         {
-            throw new System.NotImplementedException();
+            if (RingCount > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
