@@ -107,7 +107,7 @@ namespace Assignment_3
                 this._ringCount = value;
             }
         }
-        // OVERRIDE ToString METHOD+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        
         
     }
 }

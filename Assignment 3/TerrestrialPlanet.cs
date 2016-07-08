@@ -21,13 +21,13 @@ namespace Assignment_3
         {
             if (_oxygen == true)
             {
-                Console.WriteLine(" {0} is habitable",Name);
+                Console.WriteLine("Oxygen Present {0} is habitable",Name);
                 return true;
                 
             }
             else
             {
-                Console.WriteLine(" {0} is not habitable",Name);
+                Console.WriteLine("Oxygen absent {0} is not habitable",Name);
                 return false;
             }
         }
@@ -43,10 +43,11 @@ namespace Assignment_3
                 return false;
             }
         }
+        // OVERRIDE ToString METHOD+++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public override string ToString()
         {
             string total = Name + Diameter + Mass;
-            Console.WriteLine("planet {0} has a diameter of {1} and a mass of {2} ", Name, Diameter, Mass);
+            Console.WriteLine("planet {0} has a diameter of {1} with mass {2},a rotation period of {3} years and an orbital period of {4} ", Name, Diameter, Mass,RotationalPeriod,OrbitalPeriod);
             Habitable();
             return total;
         }

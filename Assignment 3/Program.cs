@@ -10,9 +10,12 @@ namespace Assignment_3
     {
         static void Main(string[] args)
         {
-            GiantPlanet planet1 = new GiantPlanet("gas", "jupiter", 2016.25, 49954548.1150);
-            TerrestrialPlanet planet2 = new TerrestrialPlanet(true, "earth", 6400, 456874);
-            planet2.ToString();
+            GiantPlanet jupiter = new GiantPlanet("Gaseous", "jupiter", 2016.25, 49954548.1150);
+            TerrestrialPlanet earth = new TerrestrialPlanet(true, "Earth", 6400, 456874);
+            jupiter.MoonCount = 2;
+            jupiter.RingCount = 4;
+            jupiter.ToString();
+            earth.ToString();
             
 
         }
