@@ -3,15 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/**
+ * author Shahzaib Malik
+ * student id 300852792 
+ * Course code : COMP123
+ */
 namespace Assignment_3
 {
     /**
-     * <summary>this is the abstract class on the program
+     * <summary>
+     * this is the abstract class of the program
      * it has private instance variables and a 
      * planet constructor which takes in the
      * name diameter and mass of the planet
      * </summary>
+     * @ constructor Planet()
      */
     abstract class Planet 
     {
@@ -60,7 +66,7 @@ namespace Assignment_3
                 this._moonCount = value;
             }
         }
-
+        //READ-ONLY string Name property
         public string Name
         {
             get
@@ -107,7 +113,5 @@ namespace Assignment_3
                 this._ringCount = value;
             }
         }
-        
-        
     }
 }

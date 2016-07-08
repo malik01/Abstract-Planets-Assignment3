@@ -3,14 +3,14 @@
   <Class Name="Assignment_3.Planet">
     <Position X="0.5" Y="1" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAQBIAAgAAAAAEAEAAABCAQBACAAAAAAEAABAACAAQA=</HashCode>
+      <HashCode>AAQBIAAgAAAAAEAAAAABCAQBACAAAAAAEAABAACAAQA=</HashCode>
       <FileName>Planet.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Assignment_3.GiantPlanet">
     <Position X="4.5" Y="0.75" Width="4.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAABAAAAAQEAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GiantPlanet.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -18,10 +18,17 @@
   <Class Name="Assignment_3.TerrestrialPlanet">
     <Position X="4.5" Y="3.5" Width="4.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAABAAAAAQEAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TerrestrialPlanet.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Assignment_3.Program">
+    <Position X="3.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
