@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Assignment_3
 {
     
-    class TerrestrialPlanet : Planet , IHabitable , IHasmoons
+    class TerrestrialPlanet : Planet , IHabitable , IHasmoons 
     {
         private bool _oxygen;
 
@@ -21,25 +21,26 @@ namespace Assignment_3
         {
             if (_oxygen == true)
             {
-                Console.WriteLine("Oxygen Present {0} is habitable",Name);
+                Console.WriteLine("| Oxygen Present {0} is habitable                                  |",Name);
                 return true;
                 
             }
             else
             {
-                Console.WriteLine("Oxygen absent {0} is not habitable",Name);
+                Console.WriteLine("| Oxygen absent {0} is not habitable",Name);
                 return false;
             }
         }
-
         public bool HasMoons()
         {
             if (MoonCount > 0)
             {
+                Console.WriteLine("| {0} has moons orbiting around it                                 |", Name);
                 return true;
             }
             else
             {
+                Console.WriteLine("| {0} does not have any moons                                      |", Name);
                 return false;
             }
         }
@@ -47,8 +48,16 @@ namespace Assignment_3
         public override string ToString()
         {
             string total = Name + Diameter + Mass;
-            Console.WriteLine("planet {0} has a diameter of {1} with mass {2},a rotation period of {3} years and an orbital period of {4} ", Name, Diameter, Mass,RotationalPeriod,OrbitalPeriod);
+            Console.WriteLine("\n| Planet {0} has the following properties:                         |", Name);
+            Console.WriteLine("| Mass:{0} kg                                       |", Mass);
+            Console.WriteLine("| Diameter:{0} km                                                  |", Diameter);
+            Console.WriteLine("| Rotational Period : {0} days                                       |", RotationalPeriod);
+            Console.WriteLine("| Orbital Period : {0} days                                           |", OrbitalPeriod);
             Habitable();
+            HasMoons();
+            
+            Console.WriteLine("|                                                                    |\n" + "|                                                                    |");
+            Console.WriteLine("----------------------------------------------------------------------");
             return total;
         }
     }

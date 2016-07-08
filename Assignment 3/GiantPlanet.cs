@@ -48,10 +48,10 @@ namespace Assignment_3
         {
             string total = Name + Diameter + Mass;
             Console.WriteLine("\n| Planet {0} has the following properties:                       |" ,Name);
-            Console.WriteLine("| Mass:{0}                                                  |", Mass);
-            Console.WriteLine("| Diameter:{0}                                                   |", Diameter);
-            Console.WriteLine("| Rotational Period : {0} years                                        |",RotationalPeriod);
-            Console.WriteLine("| Orbital Period : {0} years                                           |",OrbitalPeriod);
+            Console.WriteLine("| Mass:{0} kg                                       |", Mass);
+            Console.WriteLine("| Diameter:{0} km                                                 |", Diameter);
+            Console.WriteLine("| Rotational Period : {0} hours                                      |",RotationalPeriod);
+            Console.WriteLine("| Orbital Period : {0} years                                       |",OrbitalPeriod);
             HasRings();
             HasMoons();
             Console.WriteLine("|                                                                    |\n"+"|                                                                    |");
