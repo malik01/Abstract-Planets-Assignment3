@@ -6,15 +6,8 @@ using System.Threading.Tasks;
 
 namespace Assignment_3
 {
-    interface IHasMoons
-    {
-        bool HasMoons();
-    }
-    interface IHasRings
-    {
-        bool HasRings();
-    }
-    class  GiantPlanet : Planet , IHasMoons , IHasRings
+    
+    class  GiantPlanet : Planet , IHasRings , IHasmoons
     {
         private string _type;
 
@@ -45,6 +38,13 @@ namespace Assignment_3
             {
                 return false;
             }
+        }
+        public override string ToString()
+        {
+            string total = Name + Diameter + Mass;
+            Console.WriteLine("planet {0} has a diameter of {1} and a mass of {2} and is {3}", Name, Diameter, Mass);
+
+            return total;
         }
     }
 }

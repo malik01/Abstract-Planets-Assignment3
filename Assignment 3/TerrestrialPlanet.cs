@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Assignment_3
 {
-    interface IHabitable
-    {
-        bool Habitable();
-    }
-    class TerrestrialPlanet : Planet , IHasMoons , IHabitable
+    
+    class TerrestrialPlanet : Planet , IHabitable , IHasmoons
     {
         private bool _oxygen;
 
@@ -23,9 +20,14 @@ namespace Assignment_3
         public bool Habitable()
         {
             if (_oxygen == true)
-            { return true; }
+            {
+                Console.WriteLine(" {0} is habitable",Name);
+                return true;
+                
+            }
             else
             {
+                Console.WriteLine(" {0} is not habitable",Name);
                 return false;
             }
         }
@@ -40,6 +42,13 @@ namespace Assignment_3
             {
                 return false;
             }
+        }
+        public override string ToString()
+        {
+            string total = Name + Diameter + Mass;
+            Console.WriteLine("planet {0} has a diameter of {1} and a mass of {2} ", Name, Diameter, Mass);
+            Habitable();
+            return total;
         }
     }
 }

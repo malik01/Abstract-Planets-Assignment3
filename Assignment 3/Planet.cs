@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace Assignment_3
 {
-     abstract class Planet
+    /**
+     * <summary>this is the abstract class on the program
+     * it has private instance variables and a 
+     * planet constructor which takes in the
+     * name diameter and mass of the planet
+     * </summary>
+     */
+    abstract class Planet 
     {
+        // PRIVATE INSTANCE VARIABLES++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         private double _diameter;
         private double _mass;
         private int _moonCount;
@@ -15,14 +23,15 @@ namespace Assignment_3
         private double _orbitalPeriod;
         private int _ringCount;
         private double _rotationPeriod;
-
+        // PUBLIC CONSTRUCTOR++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public Planet(string name, double diameter, double mass)
         {
             this._name = name;
             this._diameter = diameter;
             this._mass = mass;
         }
-
+        // PUBLIC PROPERTIES++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // READ-ONLY diameter property
         public double Diameter
         {
             get
@@ -30,7 +39,7 @@ namespace Assignment_3
                 return this._diameter;
             }
         }
-
+        // READ-ONLY mass property
         public double Mass
         {
             get
@@ -98,12 +107,7 @@ namespace Assignment_3
                 this._ringCount = value;
             }
         }
-
-        public override string ToString()
-        {
-            string total = Name + Diameter + Mass;
-            Console.WriteLine("planet {0} has a diameter of {1} and a mass of {2}", Name, Diameter, Mass);
-            return total;
-        }
+        // OVERRIDE ToString METHOD+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        
     }
 }
